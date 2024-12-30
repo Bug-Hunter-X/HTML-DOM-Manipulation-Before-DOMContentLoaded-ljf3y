@@ -1,0 +1,3 @@
+This repository demonstrates a subtle bug in HTML where DOM manipulation is attempted before the DOM is fully loaded.  The issue arises from accessing and modifying the style of an element ("myDiv") within a script tag before the browser has finished parsing and rendering the HTML. This can often lead to unexpected behavior or elements not appearing as intended.  The solution involves using the DOMContentLoaded event listener to ensure the script executes only after the page is fully parsed and ready.
+
+The `bug.html` file contains the buggy code, and `bugSolution.html` presents the corrected version using the DOMContentLoaded event.
